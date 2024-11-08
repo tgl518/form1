@@ -6,13 +6,14 @@
 }
 
 body{
-   height: 750px;
+   height: 600px;
    position: relative;
+   background-color: antiquewhite;
  }
 
  main {
-   width: 400px;
-   height: 400px;
+   width: 360px;
+   height: 360px;
    position: absolute;
    top: 50%;
    left: 50%;
@@ -28,7 +29,7 @@ body{
    margin-bottom: 20px;
  }
 
-.input{
+div{
   position: relative;
 }
 div img{
@@ -46,12 +47,51 @@ input[type="text"]:hover+img,img:hover,input[type="text"]:focus+img{
   filter: drop-shadow(#000 1000px 0);
 }
 
-input[type="text"] {
+input[type="text"],input[type="password"] {
    height: 45px;
    width: 100%;
    padding:0px 40px;
-   margin-bottom: 30px;
+   margin-bottom: 10px;
    border: 1px solid #ccc;
    border-radius: 5px;
    border-radius: 30px;
  }
+
+ .button {
+  position: absolute;
+  top:12px;
+  right: 20px;
+  background: none;
+  color: inherit;
+  border: none;
+  border-left: #ccc 1px solid;
+  padding-left: 25px;
+  cursor: pointer;
+ }
+ main form>button{
+  margin-top: 20px;
+   width: 100%;
+   height: 45px;
+   background-color: #000;
+   color: #fff;
+   border: none;
+   border-radius: 5px;
+   border-radius: 30px;
+   cursor: pointer;
+   font-size: 16px;
+   font-weight: bold;
+ }
+form+a{
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  color: #000;
+  text-decoration: none;
+  font-size: 14px;
+}
+a img{
+  width:70px;
+  position: absolute;
+  top:290px;
+  left:0;
+} 
